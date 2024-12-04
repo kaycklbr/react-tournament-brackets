@@ -205,6 +205,9 @@ export type BracketLeaderboardProps = CommonTreeProps & {
 
   currentRound?: string;
 
+  svgHeight?: number;
+  svgWidth?: number;
+
   onMatchClick?: (args: {
     match: Match;
     topWon: boolean;
