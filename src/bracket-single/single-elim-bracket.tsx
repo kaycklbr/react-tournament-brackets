@@ -19,6 +19,8 @@ const SingleEliminationBracket = ({
   currentRound,
   onMatchClick,
   onPartyClick,
+  svgHeight,
+  svgWidth,
   svgWrapper: SvgWrapper = ({ children }) => <div>{children}</div>,
   theme = defaultTheme,
   options: { style: inputStyle } = {
@@ -87,14 +89,14 @@ const SingleEliminationBracket = ({
   return (
     <ThemeProvider theme={theme}>
       <SvgWrapper
-        bracketWidth={gameWidth}
-        bracketHeight={gameHeight}
+        bracketWidth={svgWidth}
+        bracketHeight={svgHeight}
         startAt={startPosition}
       >
         <svg
-          height={gameHeight}
-          width={gameWidth}
-          viewBox={`0 0 ${gameWidth} ${gameHeight}`}
+          height={svgHeight}
+          width={svgWidth}
+          viewBox={`0 0 ${svgWidth} ${svgHeight}`}
         >
           <MatchContextProvider>
             <g>
@@ -140,8 +142,8 @@ const SingleEliminationBracket = ({
                             },
                             rowIndex,
                             columnIndex,
-                            gameHeight,
-                            gameWidth,
+                            svgHeight,
+                            svgWidth,
                             style,
                           }}
                         />
