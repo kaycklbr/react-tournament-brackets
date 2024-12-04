@@ -1,5 +1,5 @@
 {
-  "name": "@g-loot/react-tournament-brackets",
+  "name": "@kaycklbr/react-tournament-brackets",
   "version": "1.0.0",
   "description": "A react component to visualize bracket leaderboards",
   "main": "dist/bundle.js",
@@ -74,7 +74,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/g-loot/react-tournament-brackets.git"
+    "url": "git+https://github.com/kaycklbr/react-tournament-brackets.git"
   },
   "bugs": {
     "url": "https://github.com/g-loot/react-tournament-brackets/issues"
